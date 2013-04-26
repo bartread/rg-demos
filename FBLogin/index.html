@@ -33,10 +33,10 @@
                 <span class="login-block">
                     <button class="button-navbar button-login button-facebook-login"
                             onclick="login()"
-                            style="display: {{loginStatus.status == 'connected' && 'none' || 'inline'}};">Sign in with Facebook</button>
+                            style="display: {{isLoggedIn && 'none' || 'inline'}};">Sign in with Facebook</button>
                     <button class="button-navbar button-login button-logout"
                             onclick="logout()"
-                            style="display: {{loginStatus.status == 'connected' && 'inline' || 'none'}};">Sign Out</button>
+                            style="display: {{isLoggedIn && 'inline' || 'none'}};">Sign Out</button>
                 </span>
             </div>
         </div>

@@ -10,12 +10,14 @@
 
 function FacebookLoginController( $scope )
 {
-    $scope.loginStatus = {};
+    $scope.isLoggedIn   = false;
+    $scope.loginStatus  = {};
 
     $scope.setLoginStatus = function( response )
     {
         $scope.$apply( function () {
-            $scope.loginStatus = response;
+            $scope.loginStatus  = response;
+            $scope.isLoggedIn   = response.status == 'connected';
         } );
     }
 }
