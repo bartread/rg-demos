@@ -2,6 +2,10 @@ body {
     padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 }
 
+.navbar-bit {
+    vertical-align: middle;
+}
+
 .button-navbar {
     -webkit-appearance: none;
     -webkit-border-image: none;
@@ -87,4 +91,14 @@ body {
     border-top-color: rgb(133, 66, 38);
     color: rgb(255, 255, 255);
     text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 0px;
+}
+
+.user-block {
+    float: right;
+    margin: 6px 4px 6px 4px;
+}
+
+.profile-pic {
+    width: 28px;
+    height: 28px;
 }

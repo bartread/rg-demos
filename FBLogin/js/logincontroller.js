@@ -12,12 +12,24 @@ function FacebookLoginController( $scope )
 {
     $scope.isLoggedIn   = false;
     $scope.loginStatus  = {};
+    $scope.userDetails  = {};
+    $scope.fullName = "";
+    $scope.profilePicUrl = "";
 
     $scope.setLoginStatus = function( response )
     {
         $scope.$apply( function () {
             $scope.loginStatus  = response;
             $scope.isLoggedIn   = response.status == 'connected';
+        } );
+    }
+
+    $scope.setUserDetails = function( response )
+    {
+        $scope.$apply( function () {
+            $scope.userDetails      = response;
+            $scope.fullName         = response.name;
+            $scope.profilePicUrl    = response.picture.data.url;
         } );
     }
 }

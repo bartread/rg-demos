@@ -18,7 +18,7 @@
         <div class="navbar-inner">
             <div class="container">
                 <!--<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar">horse</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>-->
@@ -30,13 +30,16 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>--><!--/.nav-collapse -->
-                <span class="login-block">
+                <span class="login-block navbar-bit">
                     <button class="button-navbar button-login button-facebook-login"
                             onclick="login()"
                             style="display: {{isLoggedIn && 'none' || 'inline'}};">Sign in with Facebook</button>
                     <button class="button-navbar button-login button-logout"
                             onclick="logout()"
                             style="display: {{isLoggedIn && 'inline' || 'none'}};">Sign Out</button>
+                </span>
+                <span class="user-block navbar-bit"
+                      style="display: {{isLoggedIn && 'inline' || 'none'}};">{{fullName}} <img class="profile-pic" src="{{profilePicUrl}}" />
                 </span>
             </div>
         </div>

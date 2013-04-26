@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ff4d60f-c895-4545-b77c-3ac381c84d43" name="Default" comment="Included Angular.js and updated title and heading to indicate that this app is for testing Facebook login functionality.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/faceplate.js" afterPath="$PROJECT_DIR$/js/faceplate.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/logincontroller.js" afterPath="$PROJECT_DIR$/js/logincontroller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FBLogin.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367010690015" ignored="false" />
-    <file path="/index.html" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367015238569" ignored="false" />
-    <file path="/logincontroller.js" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367015196026" ignored="false" />
-    <file path="/main.css" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367012302801" ignored="false" />
+    <file path="/index.html" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367019456321" ignored="false" />
+    <file path="/logincontroller.js" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367018639213" ignored="false" />
+    <file path="/main.css" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367019244503" ignored="false" />
+    <file path="/faceplate.js" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367018767469" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,25 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="logincontroller.js" pinned="false" current="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/js/logincontroller.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state line="30" column="38" selection-start="770" selection-end="770" vertical-scroll-proportion="0.4531722">
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="FBLogin" />
@@ -33,10 +56,13 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="82" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.62159216">
+            <state line="40" column="51" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.49778762">
               <folding>
+                <element signature="e#732#1019#0" expanded="false" />
+                <element signature="e#1102#1423#0" expanded="false" />
                 <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#1;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,7 +71,7 @@
       <file leaf-file-name="faceplate.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/faceplate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="1" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
+            <state line="42" column="65" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -54,16 +80,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logincontroller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/logincontroller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="32" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
+            <state line="97" column="21" selection-start="2755" selection-end="2755" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -97,9 +114,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/channel.html" />
+        <option value="$PROJECT_DIR$/js/logincontroller.js" />
         <option value="$PROJECT_DIR$/js/faceplate.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/js/logincontroller.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -333,8 +350,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="100" column="62" selection-start="3791" selection-end="3791" vertical-scroll-proportion="0.0">
           <folding>
+            <element signature="e#732#1019#0" expanded="false" />
+            <element signature="e#1102#1423#0" expanded="false" />
             <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -364,8 +384,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="28" selection-start="2566" selection-end="2566" vertical-scroll-proportion="0.0">
           <folding>
+            <element signature="e#732#1019#0" expanded="false" />
+            <element signature="e#1102#1423#0" expanded="false" />
             <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -388,8 +411,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="23" selection-start="1924" selection-end="1924" vertical-scroll-proportion="0.0">
           <folding>
+            <element signature="e#732#1019#0" expanded="false" />
+            <element signature="e#1102#1423#0" expanded="false" />
             <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -408,33 +434,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/js/logincontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.0">
+        <state line="30" column="38" selection-start="770" selection-end="770" vertical-scroll-proportion="0.4531722">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/faceplate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="1" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
+        <state line="42" column="65" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/logincontroller.js">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="32" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
+        <state line="97" column="21" selection-start="2755" selection-end="2755" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="82" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.62159216">
+        <state line="40" column="51" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.49778762">
           <folding>
+            <element signature="e#732#1019#0" expanded="false" />
+            <element signature="e#1102#1423#0" expanded="false" />
             <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

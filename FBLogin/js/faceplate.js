@@ -5,11 +5,19 @@
  * Time: 22:33
  * To change this template use File | Settings | File Templates.
  */
-function testAPI() {
-    console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function(response) {
-        console.log('Good to see you, ' + response.name + '.');
-    });
+function retrieveUserInformation() {
+    var _scope = angular.element( $( "body" ) ).scope();
+    if ( _scope.isLoggedIn )
+    {
+        FB.api('/me?fields=name,first_name,middle_name,last_name,picture', function(response) {
+            _scope.setUserDetails( response );
+            debugOutput( "User Details", response );
+        });
+    }
+    else
+    {
+        _scope.setUserDetails( {} );
+    }
 }
 
 function login() {
@@ -59,6 +67,7 @@ window.fbAsyncInit = function() {
         var _scope = angular.element( $( "body" ) ).scope();
         _scope.setLoginStatus( response );
         debugOutput( "Login Status", response );
+        retrieveUserInformation();
     } );
 //        FB.getLoginStatus(function(response) {
 //            if (response.status === 'connected') {
