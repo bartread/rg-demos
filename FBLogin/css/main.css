@@ -1,0 +1,89 @@
+body {
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+.button-navbar {
+    -webkit-appearance: none;
+    -webkit-border-image: none;
+    -webkit-box-align: center;
+    -webkit-box-shadow: none;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-property: opacity;
+    -webkit-transition-timing-function: linear;
+    -webkit-user-select: none;
+    -webkit-writing-mode: horizontal-tb;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline;
+    font-family: Interstate, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Garuda, Verdana, Tahoma, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    height: 32px;
+    letter-spacing: normal;
+    line-height: 14px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 4px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    transition-timing-function: linear;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-spacing: 0px;
+    writing-mode: lr-tb;
+}
+
+.button-login {
+    float: right;
+}
+
+.button-facebook-login {
+    background-color: rgb(38, 66, 133);
+    background-image: linear-gradient(rgb(56, 87, 161), rgb(38, 66, 133));
+    border-bottom-color: rgb(38, 66, 133);
+    border-left-color: rgb(38, 66, 133);
+    border-right-color: rgb(38, 66, 133);
+    border-top-color: rgb(38, 66, 133);
+    color: rgb(255, 255, 255);
+    text-indent: 38px;
+    text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 0px;
+    width: 200px;
+}
+
+.button-logout {
+    background-color: rgb(133, 66, 38);
+    background-image: linear-gradient(rgb(161, 87, 56), rgb(133, 66, 38));
+    border-bottom-color: rgb(133, 66, 38);
+    border-left-color: rgb(133, 66, 38);
+    border-right-color: rgb(133, 66, 38);
+    border-top-color: rgb(133, 66, 38);
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 0px;
+}
