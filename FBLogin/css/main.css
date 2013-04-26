@@ -62,6 +62,7 @@ body {
 
 .button-login {
     float: right;
+    display: none;
 }
 
 .button-facebook-login {

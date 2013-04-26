@@ -1,74 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
     <title>Facebook Login Test</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="css/main.css" rel="stylesheet" media="screen" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
+    <script src="js/logincontroller.js"></script>
 </head>
-<body>
+<body ng-controller="FacebookLoginController">
 
-<div id="fb-root"></div>
-<script>
+    <div id="fb-root"></div>
+    <script src="js/faceplate.js"></script>
 
-    function testAPI() {
-        console.log('Welcome!  Fetching your information.... ');
-        FB.api('/me', function(response) {
-            console.log('Good to see you, ' + response.name + '.');
-        });
-    }
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <!--<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>-->
+                <a class="brand" href="#">Facebook Login Test</a>
+                <!--<div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>--><!--/.nav-collapse -->
+                <span class="login-block">
+                    <button class="button-navbar button-login button-facebook-login"
+                            onclick="login()"
+                            style="display: {{loginStatus.status == 'connected' && 'none' || 'inline'}};">Sign in with Facebook</button>
+                    <button class="button-navbar button-login button-logout"
+                            onclick="logout()"
+                            style="display: {{loginStatus.status == 'connected' && 'inline' || 'none'}};">Sign Out</button>
+                </span>
+            </div>
+        </div>
+    </div>
 
-    function login() {
-        FB.login(function(response) {
-            if (response.authResponse) {
-                // connected
-                testAPI();
-            } else {
-                // cancelled
-            }
-        });
-    }
+    <div class="container">
 
-    // Additional JS functions here
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : '345473755574985', // App ID
-            channelUrl : './channel.html', // Channel File
-            status     : true, // check login status
-            cookie     : true, // enable cookies to allow the server to access the session
-            xfbml      : true  // parse XFBML
-        });
-
-        // Additional init code here
-
-        FB.getLoginStatus(function(response) {
-            if (response.status === 'connected') {
-                // connected
-            } else if (response.status === 'not_authorized') {
-                // not_authorized
-                login();
-            } else {
-                // not_logged_in
-                login();
-            }
-        });
-
-    };
-
-    // Load the SDK Asynchronously
-    (function(d){
-        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement('script'); js.id = id; js.async = true;
-        js.src = "http://connect.facebook.net/en_US/all.js";
-        ref.parentNode.insertBefore(js, ref);
-    }(document));
-</script>
-
-<h1>Facebook Login Test</h1>
-
-
+        <h3>Debug Output</h3>
+        <div class="debug row-fluid">
+            <div class="span12">
+                <p class="debugJsonDescription"></p>
+                <p><pre class="debugJson"></pre></p>
+            </div>
+        </div>
+    </div> <!-- /container -->
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
