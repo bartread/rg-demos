@@ -51,8 +51,8 @@
 
         <div class="friends">
             <ul>
-            <li ng-repeat="friend in friends">
-                <a class="friend rounded-border" href="http://www.facebook.com/{{friend.id}}"><img class="profile-pic" src="https://graph.facebook.com/{{friend.id}}/picture" /> {{friend.name}}</a>
+            <li class="friend-item" ng-repeat="friend in friends">
+                <a class="friend rounded-border" href="http://www.facebook.com/{{friend.id}}"><img class="profile-pic" src="https://graph.facebook.com/{{friend.id}}/picture" />&nbsp;&nbsp;{{friend.name}}</a>
             </li>
             </ul>
         </div>
