@@ -6,15 +6,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/logincontroller.js" afterPath="$PROJECT_DIR$/js/logincontroller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FBLogin.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367010690015" ignored="false" />
-    <file path="/index.html" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367019456321" ignored="false" />
-    <file path="/logincontroller.js" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367018639213" ignored="false" />
-    <file path="/main.css" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367019244503" ignored="false" />
-    <file path="/faceplate.js" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367018767469" ignored="false" />
+    <file path="/index.html" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367022795663" ignored="false" />
+    <file path="/logincontroller.js" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367021501924" ignored="false" />
+    <file path="/main.css" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367023114533" ignored="false" />
+    <file path="/faceplate.js" changelist="1ff4d60f-c895-4545-b77c-3ac381c84d43" time="1367021198431" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +32,19 @@
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="logincontroller.js" pinned="false" current="false" current-in-tab="true">
+            <file leaf-file-name="logincontroller.js" pinned="false" current="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/js/logincontroller.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state line="30" column="38" selection-start="770" selection-end="770" vertical-scroll-proportion="0.4531722">
+                  <state line="34" column="58" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/css/main.css">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state line="120" column="23" selection-start="3200" selection-end="3200" vertical-scroll-proportion="0.90816325">
                     <folding />
                   </state>
                 </provider>
@@ -56,13 +64,14 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="51" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.49778762">
+            <state line="33" column="40" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.22013274">
               <folding>
                 <element signature="e#732#1019#0" expanded="false" />
                 <element signature="e#1102#1423#0" expanded="false" />
                 <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#1;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,16 +80,7 @@
       <file leaf-file-name="faceplate.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/faceplate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="65" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="21" selection-start="2755" selection-end="2755" vertical-scroll-proportion="0.0">
+            <state line="61" column="43" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,10 +114,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/channel.html" />
-        <option value="$PROJECT_DIR$/js/logincontroller.js" />
         <option value="$PROJECT_DIR$/js/faceplate.js" />
-        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/js/logincontroller.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -355,6 +355,7 @@
             <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -389,6 +390,7 @@
             <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -416,6 +418,7 @@
             <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -436,34 +439,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/logincontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="38" selection-start="770" selection-end="770" vertical-scroll-proportion="0.4531722">
+        <state line="34" column="58" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/faceplate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="65" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
+        <state line="61" column="43" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="21" selection-start="2755" selection-end="2755" vertical-scroll-proportion="0.0">
+        <state line="120" column="23" selection-start="3200" selection-end="3200" vertical-scroll-proportion="0.90816325">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="51" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.49778762">
+        <state line="33" column="40" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.22013274">
           <folding>
             <element signature="e#732#1019#0" expanded="false" />
             <element signature="e#1102#1423#0" expanded="false" />
             <element signature="n#style#0;n#button#0;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#1;n#span#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

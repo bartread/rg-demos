@@ -20,6 +20,21 @@ function retrieveUserInformation() {
     }
 }
 
+function retrieveFriends() {
+    var _scope = angular.element( $( "body" ) ).scope();
+    if ( _scope.isLoggedIn )
+    {
+        FB.api('/me/friends', function(response) {
+            _scope.setFriends( response );
+            debugOutput( "Friends", response );
+        });
+    }
+    else
+    {
+        _scope.setFriends( [] );
+    }
+}
+
 function login() {
     if ( FB )
     {
@@ -68,6 +83,7 @@ window.fbAsyncInit = function() {
         _scope.setLoginStatus( response );
         debugOutput( "Login Status", response );
         retrieveUserInformation();
+        retrieveFriends();
     } );
 //        FB.getLoginStatus(function(response) {
 //            if (response.status === 'connected') {

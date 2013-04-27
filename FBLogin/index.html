@@ -31,10 +31,10 @@
                     </ul>
                 </div>--><!--/.nav-collapse -->
                 <span class="login-block navbar-bit">
-                    <button class="button-navbar button-login button-facebook-login"
+                    <button class="rounded-border button-navbar button-login button-facebook-login"
                             onclick="login()"
                             style="display: {{isLoggedIn && 'none' || 'inline'}};">Sign in with Facebook</button>
-                    <button class="button-navbar button-login button-logout"
+                    <button class="rounded-border button-navbar button-login button-logout"
                             onclick="logout()"
                             style="display: {{isLoggedIn && 'inline' || 'none'}};">Sign Out</button>
                 </span>
@@ -42,6 +42,19 @@
                       style="display: {{isLoggedIn && 'inline' || 'none'}};">{{fullName}} <img class="profile-pic" src="{{profilePicUrl}}" />
                 </span>
             </div>
+        </div>
+    </div>
+
+    <div class="container"
+         style="display: {{isLoggedIn && 'block' || 'none'}};">
+        <h1>{{firstName}}'s {{friendCount}} friends:</h1>
+
+        <div class="friends">
+            <ul>
+            <li ng-repeat="friend in friends">
+                <a class="friend rounded-border" href="http://www.facebook.com/{{friend.id}}"><img class="profile-pic" src="https://graph.facebook.com/{{friend.id}}/picture" /> {{friend.name}}</a>
+            </li>
+            </ul>
         </div>
     </div>
 

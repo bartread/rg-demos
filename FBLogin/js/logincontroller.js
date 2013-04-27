@@ -10,11 +10,14 @@
 
 function FacebookLoginController( $scope )
 {
-    $scope.isLoggedIn   = false;
-    $scope.loginStatus  = {};
-    $scope.userDetails  = {};
-    $scope.fullName = "";
-    $scope.profilePicUrl = "";
+    $scope.isLoggedIn       = false;
+    $scope.loginStatus      = {};
+    $scope.userDetails      = {};
+    $scope.fullName         = "";
+    $scope.firstName        = "";
+    $scope.profilePicUrl    = "";
+    $scope.friendCount      = 0;
+    $scope.friends          = [];
 
     $scope.setLoginStatus = function( response )
     {
@@ -29,7 +32,16 @@ function FacebookLoginController( $scope )
         $scope.$apply( function () {
             $scope.userDetails      = response;
             $scope.fullName         = response.name;
+            $scope.firstName        = response.first_name;
             $scope.profilePicUrl    = response.picture.data.url;
+        } );
+    }
+
+    $scope.setFriends = function( response )
+    {
+        $scope.$apply( function () {
+            $scope.friends  = response.data;
+            $scope.friendCount = $scope.friends ? $scope.friends.length : 0;
         } );
     }
 }
