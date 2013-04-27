@@ -47,11 +47,14 @@
 
     <div class="container"
          style="display: {{isLoggedIn && 'block' || 'none'}};">
-        <h1>{{firstName}}'s {{friendCount}} friends:</h1>
+
+        <div class="search"><p>Search: <input ng-model="query" /></p></div>
+
+        <h1>Welcome {{firstName}}!<br />{{hasFriends && 'Check out your ' + friendCount + ' friends:' || 'Loading your friends...'}}</h1>
 
         <div class="friends">
             <ul>
-            <li class="friend-item" ng-repeat="friend in friends">
+            <li class="friend-item" ng-repeat="friend in friends | filter:query | orderBy:'name'">
                 <a class="friend rounded-border" href="http://www.facebook.com/{{friend.id}}"><img class="profile-pic" src="https://graph.facebook.com/{{friend.id}}/picture" />&nbsp;&nbsp;{{friend.name}}</a>
             </li>
             </ul>

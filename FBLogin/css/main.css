@@ -106,6 +106,15 @@ body {
     height: 28px;
 }
 
+.search {
+    float: right;
+    margin-top: 4.2em;
+}
+
+.friends {
+    margin-top: 2em;
+}
+
 .friend-item {
     list-style-type: none;
     display: block;
@@ -114,13 +123,13 @@ body {
 .friend {
     margin: 4px 4px 4px 4px;
     padding: 0.5em 4px 4px 1em;
-    height: 2em;
+    height: 2.2em;
     width: 200px;
     float: left;
-    border-bottom-color: rgb(38, 66, 133);
-    border-left-color: rgb(38, 66, 133);
-    border-right-color: rgb(38, 66, 133);
-    border-top-color: rgb(38, 66, 133);
+    border-bottom-color: rgb(220, 220, 220);
+    border-left-color: rgb(220, 220, 220);
+    border-right-color: rgb(220, 220, 220);
+    border-top-color: rgb(220, 220, 220);
     vertical-align: middle;
     text-align: left;
 }

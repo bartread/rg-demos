@@ -18,6 +18,7 @@ function FacebookLoginController( $scope )
     $scope.profilePicUrl    = "";
     $scope.friendCount      = 0;
     $scope.friends          = [];
+    $scope.hasFriends       = false;
 
     $scope.setLoginStatus = function( response )
     {
@@ -42,6 +43,7 @@ function FacebookLoginController( $scope )
         $scope.$apply( function () {
             $scope.friends  = response.data;
             $scope.friendCount = $scope.friends ? $scope.friends.length : 0;
+            $scope.hasFriends   = $scope.friendCount > 0;
         } );
     }
 }
