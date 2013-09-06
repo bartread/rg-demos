@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99999999-9999-9999-9999-999999999999}</ProjectGuid>
+    <CompiledOutputPath>distrib\</CompiledOutputPath>
+    <OutputPath>bin\$(Configuration)</OutputPath>
+    <CordovaVersion>2.8</CordovaVersion>
+    <Name>NomadDemoApp</Name>
+    <RootNamespace>NomadDemoApp</RootNamespace>
+    <Permissions>android.permission.ACCESS_FINE_LOCATION,android.permission.ACCESS_COARSE_LOCATION,android.permission.ACCESS_LOCATION_EXTRA_COMMANDS,android.permission.RECEIVE_SMS,android.permission.READ_PHONE_STATE,android.permission.ACCESS_NETWORK_STATE,android.permission.INTERNET,android.permission.READ_CONTACTS,android.permission.WRITE_CONTACTS,android.permission.RECORD_AUDIO,android.permission.CAMERA,android.permission.WRITE_EXTERNAL_STORAGE,android.permission.GET_ACCOUNTS,android.permission.VIBRATE,android.permission.MODIFY_AUDIO_SETTINGS,android.permission.BROADCAST_STICKY</Permissions>
+    <Version>1.0.0.*</Version>
+    <BundleID>com.example.nomaddemoapp</BundleID>
+    <Description />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="images\choosephoto.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\jquery-1.6.4.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\jquery.mobile-1.2.0.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="scripts\cordova.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="style\jquery.mobile-1.2.0.min.css">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images" />
+    <Folder Include="style" />
+    <Folder Include="scripts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Target Name="ResolveReferences" />
+  <Target Name="CoreCompile" />
+  <Target Name="CreateManifestResourceNames" />
+  <Target Name="CopyFilesToOutputDirectory">
+    <ItemGroup>
+      <AbsoluteContentDestinations Include="$(OutputPath)%(Content.Identity)" />
+    </ItemGroup>
+    <Copy SourceFiles="@(Content)" DestinationFiles="@(AbsoluteContentDestinations)" />
+  </Target>
+</Project>
