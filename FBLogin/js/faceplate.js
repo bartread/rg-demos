@@ -20,18 +20,33 @@ function retrieveUserInformation() {
     }
 }
 
+function retrieveMoreFriends( response )
+{
+    var _scope = angular.element( $( "body" ) ).scope();
+    _scope.addFriends( response );
+    debugOutput( "Friends", response );
+    if ( response.paging )
+    {
+        var nextPage = response.paging.next;
+        if ( nextPage )
+        {
+            FB.api( nextPage, retrieveMoreFriends );
+        }
+    }
+}
+
 function retrieveFriends() {
     var _scope = angular.element( $( "body" ) ).scope();
     if ( _scope.isLoggedIn )
     {
-        FB.api('/me/friends', function(response) {
-            _scope.setFriends( response );
-            debugOutput( "Friends", response );
+        FB.api('/me/friends?limit=100', function(response) {
+            _scope.clearFriends();
+            retrieveMoreFriends( response );
         });
     }
     else
     {
-        _scope.setFriends( [] );
+        _scope.addFriends( [] );
     }
 }
 
@@ -40,12 +55,6 @@ function login() {
     {
         FB.login(function(response) {
             window.fbAsyncInit();
-            //            if (response.authResponse) {
-            //                // connected
-            //                testAPI();
-            //            } else {
-            //                // cancelled
-            //            }
         });
     }
 }
@@ -85,18 +94,6 @@ window.fbAsyncInit = function() {
         retrieveUserInformation();
         retrieveFriends();
     } );
-//        FB.getLoginStatus(function(response) {
-//            if (response.status === 'connected') {
-//                // connected
-//            } else if (response.status === 'not_authorized') {
-//                // not_authorized
-//                login();
-//            } else {
-//                // not_logged_in
-//                login();
-//            }
-//        });
-
 };
 
 // Load the SDK Asynchronously

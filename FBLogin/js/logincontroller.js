@@ -38,12 +38,23 @@ function FacebookLoginController( $scope )
         } );
     }
 
-    $scope.setFriends = function( response )
+    $scope.clearFriends = function ()
+    {
+        $scope.$apply( function ()
+        {
+            $scope.friends = [];
+        });
+    }
+
+    $scope.addFriends = function( response )
     {
         $scope.$apply( function () {
-            $scope.friends  = response.data;
-            $scope.friendCount = $scope.friends ? $scope.friends.length : 0;
-            $scope.hasFriends   = $scope.friendCount > 0;
+            if ( response.data && response.data.length )
+            {
+                $scope.friends  = $scope.friends.concat( response.data );
+                $scope.friendCount = $scope.friends ? $scope.friends.length : 0;
+                $scope.hasFriends   = $scope.friendCount > 0;
+            }
         } );
     }
 }

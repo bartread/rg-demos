@@ -17,19 +17,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <!--<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar">horse</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>-->
-                <a class="brand" href="#">Facebook Login Test</a>
-                <!--<div class="nav-collapse collapse">
-                    <ul class="nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>--><!--/.nav-collapse -->
+                <a class="brand" href="#">Stalk.ly</a>
                 <span class="login-block navbar-bit">
                     <button class="rounded-border button-navbar button-login button-facebook-login"
                             onclick="login()"
@@ -39,7 +27,7 @@
                             style="display: {{isLoggedIn && 'inline' || 'none'}};">Sign Out</button>
                 </span>
                 <span class="user-block navbar-bit"
-                      style="display: {{isLoggedIn && 'inline' || 'none'}};">{{fullName}} <img class="profile-pic" src="{{profilePicUrl}}" />
+                      style="display: {{isLoggedIn && 'inline' || 'none'}};">{{fullName}} <img class="profile-pic" ng-src="{{profilePicUrl}}" />
                 </span>
             </div>
         </div>
@@ -48,14 +36,14 @@
     <div class="container"
          style="display: {{isLoggedIn && 'block' || 'none'}};">
 
-        <div class="search"><p>Search: <input ng-model="query" /></p></div>
+        <div class="search"><p>Search: <input class="input-medium search-query" ng-model="query" /></p></div>
 
         <h1>Welcome {{firstName}}!<br />{{hasFriends && 'Check out your ' + friendCount + ' friends:' || 'Loading your friends...'}}</h1>
 
         <div class="friends">
             <ul>
             <li class="friend-item" ng-repeat="friend in friends | filter:query | orderBy:'name'">
-                <a class="friend rounded-border" href="http://www.facebook.com/{{friend.id}}"><img class="profile-pic" src="https://graph.facebook.com/{{friend.id}}/picture" />&nbsp;&nbsp;{{friend.name}}</a>
+                <a class="friend rounded-border" href="http://www.facebook.com/{{friend.id}}"><img class="profile-pic" ng-src="https://graph.facebook.com/{{friend.id}}/picture" />&nbsp;&nbsp;{{friend.name}}</a>
             </li>
             </ul>
         </div>
